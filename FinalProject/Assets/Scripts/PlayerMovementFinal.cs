@@ -33,6 +33,10 @@ public class PlayerMovement : MonoBehaviour
     private RaycastHit slopeHit;
     public float playerHeight;
 
+    //camera for crouch
+    public Camera playerCam;
+    public bool isCrouching = false;
+
     Vector3 moveDirection;
 
     Rigidbody rb;
@@ -64,10 +68,25 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*
+        if (Input.GetKeyDown(KeyCode.LeftControl) && isCrouching == false)
         {
-            SceneManager.LoadScene(0);
+            Vector3 currentCamPosition = playerCam.transform.position;
+            Vector3 newPosition = new Vector3(currentCamPosition.x, currentCamPosition.y - 0.562f, currentCamPosition.z);
+            isCrouching = true;
+
         }
+
+        
+        if (Input.GetKeyDown(KeyCode.LeftControl) && isCrouching == true)
+        {
+            Vector3 currentCamPosition = playerCam.transform.position;
+            Vector3 newPosition = new Vector3(currentCamPosition.x, currentCamPosition.y + 0.562f, currentCamPosition.z);
+            isCrouching = false;
+
+        }
+
+        */
     }
 
     private void MovePlayer()
