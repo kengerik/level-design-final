@@ -11,7 +11,7 @@
         "com.unity.burst": "1.8.24",
         "com.unity.collections": "1.2.4"
       },
-      "hash": "e35dbd7f157d8fdfac3ea33189f4682101b6e613"
+      "hash": "a77908be91ee0fdb6007e789aeed51f80580039a"
     },
     "com.unity.ai.navigation": {
       "version": "2.0.5",
@@ -29,17 +29,6 @@
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
         "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.cloud.draco": {
-      "version": "5.4.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.burst": "1.8.24",
-        "com.unity.collections": "1.2.4",
-        "com.unity.mathematics": "1.2.6"
       },
       "url": "https://packages.unity.com"
     },
