@@ -89,17 +89,17 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Cube",
-                "value": "{\"m_Value\":{\"x\":-0.30586719512939455,\"y\":0.032609760761260989,\"z\":-0.906684398651123}}"
+                "value": "{\"m_Value\":{\"x\":2.168438196182251,\"y\":0.04752993956208229,\"z\":-4.352275848388672}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Sphere",
-                "value": "{\"m_Value\":{\"x\":-0.22841835021972657,\"y\":0.13177157938480378,\"z\":-1.8442082405090333}}"
+                "value": "{\"m_Value\":{\"x\":-1.279244065284729,\"y\":2.123042583465576,\"z\":1.1431934833526612}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Cylinder",
-                "value": "{\"m_Value\":{\"x\":11.344240188598633,\"y\":1.7892334461212159,\"z\":-1.5874967575073243}}"
+                "value": "{\"m_Value\":{\"x\":0.5964813232421875,\"y\":0.031623125076293948,\"z\":0.5750476121902466}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -114,7 +114,7 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Pipe",
-                "value": "{\"m_Value\":{\"x\":-0.21309471130371095,\"y\":0.6799604892730713,\"z\":0.22462677955627442}}"
+                "value": "{\"m_Value\":{\"x\":-0.1585998684167862,\"y\":0.5795083045959473,\"z\":0.16273021697998048}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -124,7 +124,7 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Torus",
-                "value": "{\"m_Value\":{\"x\":1.5773444175720215,\"y\":0.23598328232765199,\"z\":0.9650144577026367}}"
+                "value": "{\"m_Value\":{\"x\":-0.11720395088195801,\"y\":0.3059053421020508,\"z\":-0.3098917007446289}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
