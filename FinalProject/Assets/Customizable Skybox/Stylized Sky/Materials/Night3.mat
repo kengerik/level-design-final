@@ -26,7 +26,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _HorizonLineContribution: 0
-    - _HorizonLineExponent: 1
+    - _HorizonLineExponent: 0
     - _SkyGradientExponent: 2.5
     - _SunDiscContribution: 1
     - _SunDiscExponent: 250000
