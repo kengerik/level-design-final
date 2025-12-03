@@ -24,6 +24,7 @@ public class BedroomEvent5 : MonoBehaviour
     public AudioSource ellaAhSoThatsHowandAnotherPage;
     public AudioSource BookGrabandSkim;
     public AudioSource pageGrab;
+    public AudioSource PapaReadsPage3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -90,7 +91,7 @@ public class BedroomEvent5 : MonoBehaviour
         ellaAhSoThatsHowandAnotherPage.Play();
         CabinIssueFix6.SetActive(true);
         CabinUhOh4.SetActive(false);
-        StartCoroutine(WaitandDoSomething(2.0f));
+        StartCoroutine(WaitandDoSomething(5.0f));
     }
 
     IEnumerator WaitandDoSomething(float secondsToWait)
@@ -100,5 +101,6 @@ public class BedroomEvent5 : MonoBehaviour
         Debug.Log("Finished waiting! Doing cabin event now.");
         // Place the code you want to execute after the delay here
         journalCollect3 = true;
+        PapaReadsPage3.Play();
     }
 }

@@ -27,6 +27,7 @@ public class EngineEvent : MonoBehaviour
     public AudioSource sparkNoise;
     public AudioSource ellaFindsPage2;
     public AudioSource pageGrab;
+    public AudioSource PapaReadsPage2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,6 +49,7 @@ public class EngineEvent : MonoBehaviour
         if (inside == true && journalCollect2 == true)
         {
             pageGrab.Play();
+            PapaReadsPage2.Play();
             JournalPage2.SetActive(false);
             journalCollect2 = false;
         }
@@ -91,6 +93,7 @@ public class EngineEvent : MonoBehaviour
         closedBreakerBox.SetActive(false);
         openBreakerBox.SetActive(true);
         JournalPage2.SetActive(true);
+        sparkNoise.Play();
         Smoke.Stop();
 
         //Audio cues
@@ -101,7 +104,7 @@ public class EngineEvent : MonoBehaviour
         StartCoroutine(WaitandDoSomethingFirst(3.0f));
 
         //Wait 13 seconds before starting event3
-        StartCoroutine(WaitandDoSomething(13.0f));
+        StartCoroutine(WaitandDoSomething(40.0f));
 
     }
 

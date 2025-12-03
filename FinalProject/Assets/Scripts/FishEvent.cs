@@ -40,13 +40,6 @@ public class FishEvent : MonoBehaviour
             ReelUp();
             
         }
-
-        if (inside == true && JournalCollect == true)
-        {
-            EllaFindsJournalAudio.Play();
-            Journal.SetActive(false);
-            JournalCollect = false;
-        }
     }
 
     private void OnTriggerEnter(Collider other)

@@ -14,6 +14,7 @@ public class HullEvent7 : MonoBehaviour
     public GameObject JournalPage4;
     public GameObject planks;
     public GameObject CueFinalEvent;
+    public GameObject Hole;
 
     //standard interaction prompt
     public GameObject EInteract;
@@ -81,6 +82,7 @@ public class HullEvent7 : MonoBehaviour
     {
         hullPatchSound.Play();
         planks.SetActive(true);
+        Hole.SetActive(false);
         BurstParticles.SetActive(false);
         CueFinalEvent.SetActive(true);
 

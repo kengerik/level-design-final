@@ -6,6 +6,7 @@ public class CabinEvent : MonoBehaviour
 {
     public bool inside = false;
     public bool interacted = false;
+    public bool JournalCollect;
 
 
     //Object triggers
@@ -27,6 +28,8 @@ public class CabinEvent : MonoBehaviour
     public AudioSource alarmnoise;
     public AudioSource fixnoise;
     public AudioSource EngineBreak;
+    public AudioSource PapaJournalPage2;
+    public AudioSource DasOldJournal;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,6 +46,11 @@ public class CabinEvent : MonoBehaviour
             HidePrompt();
             Fix();
             
+        }
+
+        if (inside == true && JournalCollect == true)
+        {
+            JournalCollect = false;
         }
     }
 
@@ -89,9 +97,11 @@ public class CabinEvent : MonoBehaviour
         line1.SetActive(false);
         alarmnoise.Stop();
         Sparknoise.Stop();
+        DasOldJournal.Play();
+        //StartCoroutine(WaitandDoSomethingElse(5.0f));
 
-        //Wait 25 seconds before starting event3
-        StartCoroutine(WaitandDoSomething(25.0f));
+        //Wait 17 seconds before starting event3
+        StartCoroutine(WaitandDoSomething(17.0f));
 
     }
 
@@ -103,5 +113,14 @@ public class CabinEvent : MonoBehaviour
         // Place the code you want to execute after the delay here
         EngineEvent3.SetActive(true);
         EngineBreak.Play();
+    }
+
+    IEnumerator WaitandDoSomethingElse(float secondsToWait)
+    {
+        Debug.Log("Starting to wait...");
+        yield return new WaitForSeconds(secondsToWait); // Pause execution for 'secondsToWait'
+        Debug.Log("Finished waiting! Doing cabin event now.");
+        // Place the code you want to execute after the delay here
+        PapaJournalPage2.Play();
     }
 }
