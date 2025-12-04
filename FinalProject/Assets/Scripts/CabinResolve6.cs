@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.Compilation;
 using UnityEngine;
 
 public class CabinResolve6 : MonoBehaviour
