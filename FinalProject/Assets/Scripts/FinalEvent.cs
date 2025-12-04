@@ -64,20 +64,17 @@ public class FinalEvent : MonoBehaviour
     //what actually happens upon successful input
     void Death()
     {
-        Monster.SetActive(true);
-        ellaScream.Play();
-        MonsterAttack.Play();
-
-        //Depends on length of monster animation/sounds and scream sounds
-        StartCoroutine(WaitandDoSomething(2.0f));
+        StartCoroutine(WaitandDoSomethingFirst(5.0f));
     }
 
-    IEnumerator WaitandDoSomething(float secondsToWait)
+    IEnumerator WaitandDoSomethingFirst(float secondsToWait)
     {
         Debug.Log("Starting to wait...");
         yield return new WaitForSeconds(secondsToWait); // Pause execution for 'secondsToWait'
         Debug.Log("Finished waiting! Doing cabin event now.");
         // Place the code you want to execute after the delay here
+        ellaScream.Play();
+        MonsterAttack.Play();
         UIBlack.SetActive(true);
     }
 }

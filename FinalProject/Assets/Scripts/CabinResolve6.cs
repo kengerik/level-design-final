@@ -22,6 +22,7 @@ public class CabinResolve6 : MonoBehaviour
     public AudioSource BANGCREAK;
     public AudioSource mechanicalFix;
     public AudioSource floodNoise;
+    public AudioSource EllaDespairLine;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -88,6 +89,7 @@ public class CabinResolve6 : MonoBehaviour
         Debug.Log("Finished waiting! Doing cabin event now.");
         // Place the code you want to execute after the delay here
         BANGCREAK.Play();
+        EllaDespairLine.Play();
         HullEvent7.SetActive(true);
     }
 }

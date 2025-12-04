@@ -45,7 +45,7 @@ public class BedroomEvent5 : MonoBehaviour
 
         if (inside == true && journalCollect3 == true)
         {
-            journalPage3.SetActive(false);
+            //journalPage3.SetActive(false);
             pageGrab.Play();
             journalCollect3 = false;
         }

@@ -15,6 +15,7 @@ public class HullEvent7 : MonoBehaviour
     public GameObject planks;
     public GameObject CueFinalEvent;
     public GameObject Hole;
+    public GameObject RunPage;
 
     //standard interaction prompt
     public GameObject EInteract;
@@ -23,6 +24,7 @@ public class HullEvent7 : MonoBehaviour
     public AudioSource hullPatchSound;
     public AudioSource pageGrab;
     public AudioSource ellaDespair;
+    public AudioSource PapaPage4;
     //if we choose to put an alarm here public AudioSource deepAlarmNoise;
 
 
@@ -41,8 +43,9 @@ public class HullEvent7 : MonoBehaviour
         {
             ellaDespair.Play();
             pageGrab.Play();
-            JournalPage4.SetActive(false);
+            //JournalPage4.SetActive(false);
             JournalCollect4 = false;
+            PapaPage4.Play();
         }
     }
 
@@ -85,6 +88,7 @@ public class HullEvent7 : MonoBehaviour
         Hole.SetActive(false);
         BurstParticles.SetActive(false);
         CueFinalEvent.SetActive(true);
+        RunPage.SetActive(true);
 
         //pause for 10 secons before doing event2
         StartCoroutine(WaitandDoSomething(2.0f));

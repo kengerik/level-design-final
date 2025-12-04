@@ -50,7 +50,7 @@ public class EngineEvent : MonoBehaviour
         {
             pageGrab.Play();
             PapaReadsPage2.Play();
-            JournalPage2.SetActive(false);
+            //JournalPage2.SetActive(false);
             journalCollect2 = false;
         }
     }
